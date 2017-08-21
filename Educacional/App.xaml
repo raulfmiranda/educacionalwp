@@ -21,8 +21,22 @@
             <Setter Property="FontSize" Value="20"/>
         </Style>
 
+        <Style TargetType="Button" x:Key="ButtonSecondary">
+            <Setter Property="Background" Value="{StaticResource button_background_secondary}"/>
+            <Setter Property="Foreground" Value="{StaticResource button_text_secondary}"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
         <Style TargetType="TextBlock" x:Key="TextBlockStyle">
             <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="{StaticResource screen_text}"/>
+            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlockTitle">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="{StaticResource screen_text}"/>
         </Style>
 

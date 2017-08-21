@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Educacional.MainPage"
+    x:Class="Educacional.Login"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Educacional"
@@ -12,7 +12,6 @@
         <TextBox PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
         <TextBox PlaceholderText="Senha" Margin="0 0 0 25" Style="{StaticResource TextBoxStyle}"/>
         <Button Content="ACESSAR" Margin="0 0 0 50" Style="{StaticResource ButtonPrimary}"/>
-        <HyperlinkButton Content="Cadastrar-se" HorizontalAlignment="Center" Style="{StaticResource LinkStyle}"/>
+        <HyperlinkButton x:Name="hlinkCadastrarUsuario" Content="Cadastrar-se" HorizontalAlignment="Center" Style="{StaticResource LinkStyle}" Click="hlinkCadastrarUsuario_Click"/>
     </StackPanel>
 </Page>
-
