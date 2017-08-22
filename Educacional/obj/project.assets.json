@@ -22015,10 +22015,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\Educacional.csproj",
+      "projectUniqueName": "C:\\Users\\Raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\Educacional.csproj",
       "projectName": "Educacional",
-      "projectPath": "c:\\users\\raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\Educacional.csproj",
-      "outputPath": "c:\\users\\raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\obj\\",
+      "projectPath": "C:\\Users\\Raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\Educacional.csproj",
+      "outputPath": "C:\\Users\\Raul\\documents\\visual studio 2017\\Projects\\Educacional\\Educacional\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "uap10.0.10586"

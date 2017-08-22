@@ -5,13 +5,14 @@
     xmlns:local="using:Educacional"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="Black"
     mc:Ignorable="d">
 
     <StackPanel Padding="25 0 25 0" Background="{StaticResource screen_background}">
         <Image Source="Assets/educacional.png" Margin="0 0 0 50" HorizontalAlignment="Center"/>
         <TextBox PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
         <TextBox PlaceholderText="Senha" Margin="0 0 0 25" Style="{StaticResource TextBoxStyle}"/>
-        <Button Content="ACESSAR" Margin="0 0 0 50" Style="{StaticResource ButtonPrimary}"/>
+        <Button x:Name="btAcessar" Content="ACESSAR" Margin="0 0 0 50" Style="{StaticResource ButtonPrimary}" Click="btAcessar_Click"/>
         <HyperlinkButton x:Name="hlinkCadastrarUsuario" Content="Cadastrar-se" HorizontalAlignment="Center" Style="{StaticResource LinkStyle}" Click="hlinkCadastrarUsuario_Click"/>
     </StackPanel>
 </Page>

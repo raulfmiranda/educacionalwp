@@ -217,3 +217,8 @@ c:\users\raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\
 c:\users\raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Login.xaml
 c:\users\raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Cadastro.xbf
 c:\users\raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Login.xbf
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\bin\x86\Debug\Principal.xbf
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Principal.g.i.cs
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Principal.g.cs
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Principal.xaml
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\obj\x86\Debug\Principal.xbf

@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Educacional.Principal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Educacional"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="Black"
+    mc:Ignorable="d">
+
+    <SplitView x:Name="splitView" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Background="{StaticResource screen_background}" >
+        <SplitView.Pane>
+            <StackPanel Background="{StaticResource button_background}">
+                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="mbt1Introducao" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
+                    Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
+                    <TextBlock Text="Introdução" FontSize="18" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="mbt2Pombalinas" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
+                        Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
+                    <TextBlock Text="Pombalinas" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="mbt3Quiz" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
+                        Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
+                    <TextBlock Text="Quiz" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Grid Padding="10">
+                <TextBlock x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
+            </Grid>
+        </SplitView.Content>
+    </SplitView>
+</Page>

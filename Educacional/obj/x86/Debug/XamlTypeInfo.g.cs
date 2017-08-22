@@ -132,17 +132,19 @@ namespace Educacional.Educacional_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "Educacional.Cadastro";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Educacional.Login";
+            _typeNameTable[4] = "Educacional.Principal";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Educacional.Cadastro);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Educacional.Login);
+            _typeTable[4] = typeof(global::Educacional.Principal);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,6 +181,7 @@ namespace Educacional.Educacional_XamlTypeInfo
 
         private object Activate_0_Cadastro() { return new global::Educacional.Cadastro(); }
         private object Activate_3_Login() { return new global::Educacional.Login(); }
+        private object Activate_4_Principal() { return new global::Educacional.Principal(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,6 +211,13 @@ namespace Educacional.Educacional_XamlTypeInfo
             case 3:   //  Educacional.Login
                 userType = new global::Educacional.Educacional_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Educacional.Principal
+                userType = new global::Educacional.Educacional_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Principal;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

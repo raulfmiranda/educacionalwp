@@ -44,6 +44,7 @@
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="Foreground" Value="{StaticResource screen_text}"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
         </Style>
 
         <Style TargetType="HyperlinkButton" x:Key="LinkStyle">

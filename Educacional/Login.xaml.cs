@@ -31,5 +31,10 @@ namespace Educacional
         {
             this.Frame.Navigate(typeof(Cadastro));
         }
+
+        private void btAcessar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Principal));
+        }
     }
 }
