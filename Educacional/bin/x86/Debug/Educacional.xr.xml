@@ -81,8 +81,13 @@
       <RootProperty Name="Pane" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Padding" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Educacional.Principal" />

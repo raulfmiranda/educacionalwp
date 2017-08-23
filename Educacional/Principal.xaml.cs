@@ -37,23 +37,28 @@ namespace Educacional
         {
             Button btn = sender as Button;
 
-            mbt1Introducao.BorderBrush = new SolidColorBrush(Colors.Transparent);
-            mbt2Pombalinas.BorderBrush = new SolidColorBrush(Colors.Transparent);
-            mbt3Quiz.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            mbt1Definição.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            mbt2Sgbd.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            mbt3Projeto.BorderBrush = new SolidColorBrush(Colors.Transparent);
+            mbt4Quiz.BorderBrush = new SolidColorBrush(Colors.Transparent);
             btn.BorderBrush = new SolidColorBrush(Colors.White);
             btn.BorderThickness = new Thickness(5, 0, 0, 0);
 
-            if(btn.Name.Equals("mbt1Introducao"))
+            if(btn.Name.Equals("mbt1Definição"))
             {
-                tbConteudo.Text = "INTRO";
+                tbConteudo.Text = "Segundo Korth, um banco de dados 'é uma coleção de dados inter-relacionados, representando informações sobre um domínio específico', ou seja, sempre que for possível agrupar informações que se relacionam e tratam de um mesmo assunto, posso dizer que tenho um banco de dados. Podemos exemplificar situações clássicas como uma lista telefônica, um catálogo de CDs ou um sistema de controle de RH de uma empresa.";
             }
-            else if(btn.Name.Equals("mbt2Pombalinas"))
+            else if(btn.Name.Equals("mbt2Sgbd"))
             {
-                tbConteudo.Text = "POBALINAS";
+                tbConteudo.Text = "Um sistema de gerenciamento de banco de dados (SGBD) é um software que possui recursos capazes de manipular as informações do banco de dados e interagir com o usuário. Exemplos de SGBDs são: Oracle, SQL Server, DB2, PostgreSQL, MySQL, o próprio Access ou Paradox, entre outros. Por último, temos que conceituar um sistema de banco de dados como o conjunto de quatro componentes básicos: dados, hardware, software e usuários.Date conceituou que 'sistema de bancos de dados pode ser considerado como uma sala de arquivos eletrônica'.";
             }
-            else if (btn.Name.Equals("mbt3Quiz"))
+            else if (btn.Name.Equals("mbt3Projeto"))
             {
-                tbConteudo.Text = "QUIZ";
+                tbConteudo.Text = "Todo bom sistema de banco de dados deve apresentar um projeto, que visa a organização das informações e utilização de técnicas para que o futuro sistema obtenha boa performance e também facilite infinitamente as manutenções que venham a acontecer. O projeto de banco de dados se dá em duas fases: Modelagem conceitual e Projeto lógico. Estas duas etapas se referem a um sistema de banco de dados ainda não implementado, ou seja, que ainda não exista, um novo projeto.";
+            }
+            else if (btn.Name.Equals("mbt4Quiz"))
+            {
+                tbConteudo.Text = "Quiz";
             }
         }
     }

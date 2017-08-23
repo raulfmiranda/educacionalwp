@@ -13,17 +13,22 @@
             <StackPanel Background="{StaticResource button_background}">
                 <Button x:ConnectionId='2' x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent"                              />
                 <StackPanel Orientation="Horizontal">
-                    <Button x:ConnectionId='5' x:Name="mbt1Introducao" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
+                    <Button x:ConnectionId='6' x:Name="mbt1Definição" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
                     Width="50" Height="50" Background="Transparent"                            />
-                    <TextBlock Text="Introdução" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="Definição" FontSize="18" VerticalAlignment="Center"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:ConnectionId='4' x:Name="mbt2Pombalinas" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
+                    <Button x:ConnectionId='5' x:Name="mbt2Sgbd" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
                         Width="50" Height="50" Background="Transparent"                            />
-                    <TextBlock Text="Pombalinas" FontSize="18" VerticalAlignment="Center" />
+                    <TextBlock Text="SGBD" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:ConnectionId='3' x:Name="mbt3Quiz" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
+                    <Button x:ConnectionId='4' x:Name="mbt3Projeto" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
+                        Width="50" Height="50" Background="Transparent"                            />
+                    <TextBlock Text="Projeto" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:ConnectionId='3' x:Name="mbt4Quiz" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
                         Width="50" Height="50" Background="Transparent"                            />
                     <TextBlock Text="Quiz" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
@@ -31,9 +36,11 @@
             
         </SplitView.Pane>
         <SplitView.Content>
-            <Grid Padding="10">
-                <TextBlock x:ConnectionId='6' x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
-            </Grid>
+            <ScrollViewer VerticalScrollMode="Enabled">
+                <Grid Padding="10" Height="auto">
+                    <TextBlock x:ConnectionId='7' x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
+                </Grid>
+            </ScrollViewer>
         </SplitView.Content>
     </SplitView>
 </Page>

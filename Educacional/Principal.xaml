@@ -13,17 +13,22 @@
             <StackPanel Background="{StaticResource button_background}">
                 <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="mbt1Introducao" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
+                    <Button x:Name="mbt1Definição" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
                     Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
-                    <TextBlock Text="Introdução" FontSize="18" VerticalAlignment="Center"/>
+                    <TextBlock Text="Definição" FontSize="18" VerticalAlignment="Center"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="mbt2Pombalinas" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
+                    <Button x:Name="mbt2Sgbd" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
                         Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
-                    <TextBlock Text="Pombalinas" FontSize="18" VerticalAlignment="Center" />
+                    <TextBlock Text="SGBD" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="mbt3Quiz" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
+                    <Button x:Name="mbt3Projeto" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;"
+                        Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
+                    <TextBlock Text="Projeto" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="mbt4Quiz" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
                         Width="50" Height="50" Background="Transparent" Click="Global_Button_Click"/>
                     <TextBlock Text="Quiz" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
@@ -31,9 +36,11 @@
             
         </SplitView.Pane>
         <SplitView.Content>
-            <Grid Padding="10">
-                <TextBlock x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
-            </Grid>
+            <ScrollViewer VerticalScrollMode="Enabled">
+                <Grid Padding="10" Height="auto">
+                    <TextBlock x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
+                </Grid>
+            </ScrollViewer>
         </SplitView.Content>
     </SplitView>
 </Page>
