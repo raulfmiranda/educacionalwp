@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.SpeechSynthesis;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -60,6 +61,22 @@ namespace Educacional
             {
                 tbConteudo.Text = "Quiz";
             }
+        }
+
+        private async void Falar(string texto)
+        {
+            // The media object for controlling and playing audio.
+            MediaElement mediaElement = this.media;
+
+            // The object for controlling the speech synthesis engine (voice).
+            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+
+            // Generate the audio stream from plain text.
+            SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync(texto);
+
+            // Send the stream to the media object.
+            mediaElement.SetSource(stream, stream.ContentType);
+            mediaElement.Play();
         }
     }
 }

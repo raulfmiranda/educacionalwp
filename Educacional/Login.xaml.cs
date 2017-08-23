@@ -22,9 +22,18 @@ namespace Educacional
     /// </summary>
     public sealed partial class Login : Page
     {
+        static private List<Usuario> usuarios = new List<Usuario>();
+        static int idCount = 1;
+        static private bool iniciou = false;
+
         public Login()
         {
             this.InitializeComponent();
+
+            if(usuarios.Count < 1)
+            {
+                usuarios.Add(new Usuario(idCount++, "Raul", "raul@gmail.com", "raul", "123"));
+            }
         }
 
         private void hlinkCadastrarUsuario_Click(object sender, RoutedEventArgs e)
@@ -34,7 +43,31 @@ namespace Educacional
 
         private void btAcessar_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Principal));
+            if(!string.IsNullOrWhiteSpace(tboxLogin.Text) && !string.IsNullOrWhiteSpace(tboxSenha.Text))
+            {
+                foreach(Usuario usu in Login.usuarios)
+                {
+                    if(usu.Login.Equals(tboxLogin.Text) && usu.Senha.Equals(tboxSenha.Text))
+                    {
+                        this.Frame.Navigate(typeof(Principal));
+                    }
+                }
+                this.tbInfo.Text = "Login e senha inválidos.";
+            }
+            else
+            {
+                this.tbInfo.Text = "Preencha o login e a senha.";
+            }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if(Login.iniciou && e.Parameter != null)
+            {
+                Usuario usu = (Usuario)e.Parameter;
+                usuarios.Add(new Usuario(idCount++, usu.Nome, usu.Email, usu.Login, usu.Senha));
+            }
+            Login.iniciou = true;
         }
     }
 }

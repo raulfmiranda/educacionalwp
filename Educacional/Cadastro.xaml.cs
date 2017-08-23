@@ -31,5 +31,16 @@ namespace Educacional
         {
             this.Frame.Navigate(typeof(Login));
         }
+
+        private void btCadastrarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            if(!string.IsNullOrWhiteSpace(tboxEmail.Text) && !string.IsNullOrWhiteSpace(tboxLogin.Text) &&
+                !string.IsNullOrWhiteSpace(tboxNome.Text) && !string.IsNullOrWhiteSpace(tboxSenha.Text))
+            {
+                this.Frame.Navigate(typeof(Login), new Usuario(tboxNome.Text, tboxEmail.Text, tboxLogin.Text, tboxSenha.Text));
+            }
+        }
+
+        
     }
 }

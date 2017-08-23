@@ -11,13 +11,13 @@
     <StackPanel Padding="25 50 25 0" Background="{StaticResource screen_background}">
         <TextBlock Text="Cadastro" Margin="0 0 0 10" HorizontalAlignment="Center" Style="{StaticResource TextBlockTitle}"/>
         <TextBlock Text="Entre com as informações abaixo." Margin="0 0 0 25" HorizontalAlignment="Center" Style="{StaticResource TextBlockStyle}"/>
-        <TextBox PlaceholderText="Nome" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox PlaceholderText="E-mail" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox PlaceholderText="Senha" Margin="0 0 0 50" Style="{StaticResource TextBoxStyle}"/>
+        <TextBox x:ConnectionId='1' x:Name="tboxNome" PlaceholderText="Nome" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
+        <TextBox x:ConnectionId='2' x:Name="tboxEmail" PlaceholderText="E-mail" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
+        <TextBox x:ConnectionId='3' x:Name="tboxLogin" PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
+        <TextBox x:ConnectionId='4' x:Name="tboxSenha" PlaceholderText="Senha" Margin="0 0 0 50" Style="{StaticResource TextBoxStyle}"/>
         <StackPanel Orientation="Horizontal" Margin="0,0,7,50" HorizontalAlignment="Center">
-            <Button x:ConnectionId='1' x:Name="btCancelarCadastro" Content="Cancelar" Style="{StaticResource ButtonSecondary}"                                 />
-            <Button x:ConnectionId='2' x:Name="btCadastrarUsuario" Content="Cadastrar"  Style="{StaticResource ButtonPrimary}"/>
+            <Button x:ConnectionId='5' x:Name="btCancelarCadastro" Content="Cancelar" Style="{StaticResource ButtonSecondary}"                                 />
+            <Button x:ConnectionId='6' x:Name="btCadastrarUsuario" Content="Cadastrar"  Style="{StaticResource ButtonPrimary}"                                 />
         </StackPanel>
     </StackPanel>
 </Page>
