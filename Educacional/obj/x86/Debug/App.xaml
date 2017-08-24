@@ -26,6 +26,8 @@
             <Setter Property="Foreground" Value="{StaticResource button_text_secondary}"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderBrush" Value="{StaticResource button_secondary_border}"/>
+            <Setter Property="BorderThickness" Value="1"/>
         </Style>
 
         <Style TargetType="TextBlock" x:Key="TextBlockStyle">
@@ -45,6 +47,13 @@
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="Foreground" Value="{StaticResource screen_text}"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style TargetType="PasswordBox" x:Key="PassBoxStyle">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Foreground" Value="{StaticResource screen_text}"/>
+            <Setter Property="PlaceholderText" Value="Senha"/>
         </Style>
 
         <Style TargetType="HyperlinkButton" x:Key="LinkStyle">

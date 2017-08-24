@@ -35,9 +35,9 @@ namespace Educacional
         private void btCadastrarUsuario_Click(object sender, RoutedEventArgs e)
         {
             if(!string.IsNullOrWhiteSpace(tboxEmail.Text) && !string.IsNullOrWhiteSpace(tboxLogin.Text) &&
-                !string.IsNullOrWhiteSpace(tboxNome.Text) && !string.IsNullOrWhiteSpace(tboxSenha.Text))
+                !string.IsNullOrWhiteSpace(tboxNome.Text) && !string.IsNullOrWhiteSpace(pboxSenha.Password))
             {
-                this.Frame.Navigate(typeof(Login), new Usuario(tboxNome.Text, tboxEmail.Text, tboxLogin.Text, tboxSenha.Text));
+                this.Frame.Navigate(typeof(Login), new Usuario(tboxNome.Text, tboxEmail.Text, tboxLogin.Text, pboxSenha.Password));
             }
         }
 

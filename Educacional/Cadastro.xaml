@@ -14,7 +14,7 @@
         <TextBox x:Name="tboxNome" PlaceholderText="Nome" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
         <TextBox x:Name="tboxEmail" PlaceholderText="E-mail" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
         <TextBox x:Name="tboxLogin" PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox x:Name="tboxSenha" PlaceholderText="Senha" Margin="0 0 0 50" Style="{StaticResource TextBoxStyle}"/>
+        <PasswordBox x:Name="pboxSenha" PlaceholderText="Senha" Margin="0 0 0 50" Style="{StaticResource PassBoxStyle}"/>
         <StackPanel Orientation="Horizontal" Margin="0,0,7,50" HorizontalAlignment="Center">
             <Button x:Name="btCancelarCadastro" Content="Cancelar" Style="{StaticResource ButtonSecondary}" Click="btCancelarCadastro_Click"/>
             <Button x:Name="btCadastrarUsuario" Content="Cadastrar"  Style="{StaticResource ButtonPrimary}" Click="btCadastrarUsuario_Click"/>

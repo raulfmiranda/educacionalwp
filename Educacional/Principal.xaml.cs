@@ -24,9 +24,13 @@ namespace Educacional
     /// </summary>
     public sealed partial class Principal : Page
     {
+        private MediaElement media;
+
         public Principal()
         {
             this.InitializeComponent();
+            this.media = new MediaElement();
+            Falar(tbConteudo.Text);
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -61,6 +65,8 @@ namespace Educacional
             {
                 tbConteudo.Text = "Quiz";
             }
+
+            Falar(tbConteudo.Text);
         }
 
         private async void Falar(string texto)
@@ -77,6 +83,17 @@ namespace Educacional
             // Send the stream to the media object.
             mediaElement.SetSource(stream, stream.ContentType);
             mediaElement.Play();
+        }
+
+        private void btFalar_Click(object sender, RoutedEventArgs e)
+        {
+            this.media.Stop();
+            Falar(tbConteudo.Text);
+        }
+
+        private void btParar_Click(object sender, RoutedEventArgs e)
+        {
+            this.media.Stop();
         }
     }
 }

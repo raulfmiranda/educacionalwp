@@ -43,11 +43,11 @@ namespace Educacional
 
         private void btAcessar_Click(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(tboxLogin.Text) && !string.IsNullOrWhiteSpace(tboxSenha.Text))
+            if(!string.IsNullOrWhiteSpace(tboxLogin.Text) && !string.IsNullOrWhiteSpace(pboxSenha.Password))
             {
                 foreach(Usuario usu in Login.usuarios)
                 {
-                    if(usu.Login.Equals(tboxLogin.Text) && usu.Senha.Equals(tboxSenha.Text))
+                    if(usu.Login.Equals(tboxLogin.Text) && usu.Senha.Equals(pboxSenha.Password))
                     {
                         this.Frame.Navigate(typeof(Principal));
                     }

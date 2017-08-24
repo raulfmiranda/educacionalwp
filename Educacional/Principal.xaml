@@ -36,11 +36,28 @@
             
         </SplitView.Pane>
         <SplitView.Content>
-            <ScrollViewer VerticalScrollMode="Enabled">
-                <Grid Padding="10" Height="auto">
-                    <TextBlock x:Name="tbConteudo" Text="Bem-vindo(a) ao Manual de Introdução às Reformas Educacionais Brasileiras. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
-                </Grid>
-            </ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer VerticalScrollMode="Enabled">
+                    <Grid Padding="10" Height="auto">
+                        <TextBlock x:Name="tbConteudo" Text="Bem-vindo(a) ao Tutorial de Introdução à Banco de Dados. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
+                    </Grid>
+                </ScrollViewer>
+                <StackPanel Grid.Row="1" Background="{StaticResource button_background}" BorderBrush="Red" BorderThickness="1">
+                    <TextBlock Text="Controle do Audio" HorizontalAlignment="Center" Foreground="White"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="btFalar" Content="Falar" Style="{StaticResource ButtonSecondary}" Click="btFalar_Click"/>
+                        <Button x:Name="btParar" Content="Parar" Style="{StaticResource ButtonSecondary}" Click="btParar_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            
         </SplitView.Content>
     </SplitView>
 </Page>

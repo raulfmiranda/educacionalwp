@@ -12,7 +12,7 @@
         <Image Source="Assets/educacional.png" Margin="0 0 0 50" HorizontalAlignment="Center"/>
         <TextBlock x:Name="tbInfo" Foreground="Red"/>
         <TextBox x:Name="tboxLogin" PlaceholderText="Login" Margin="0 0 0 10" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox x:Name="tboxSenha" PlaceholderText="Senha" Margin="0 0 0 25" Style="{StaticResource TextBoxStyle}"/>
+        <PasswordBox x:Name="pboxSenha" Margin="0 0 0 25" Style="{StaticResource PassBoxStyle}"/>
         <Button x:Name="btAcessar" Content="ACESSAR" Margin="0 0 0 50" Style="{StaticResource ButtonPrimary}" Click="btAcessar_Click"/>
         <HyperlinkButton x:Name="hlinkCadastrarUsuario" Content="Cadastrar-se" HorizontalAlignment="Center" Style="{StaticResource LinkStyle}" Click="hlinkCadastrarUsuario_Click"/>
     </StackPanel>
