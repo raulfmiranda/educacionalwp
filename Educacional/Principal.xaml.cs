@@ -48,8 +48,10 @@ namespace Educacional
             mbt4Quiz.BorderBrush = new SolidColorBrush(Colors.Transparent);
             btn.BorderBrush = new SolidColorBrush(Colors.White);
             btn.BorderThickness = new Thickness(5, 0, 0, 0);
+            btGoToQuiz.Visibility = Visibility.Collapsed;
 
-            if(btn.Name.Equals("mbt1Definição"))
+            this.media.Stop();
+            if (btn.Name.Equals("mbt1Definição"))
             {
                 tbConteudo.Text = "Segundo Korth, um banco de dados 'é uma coleção de dados inter-relacionados, representando informações sobre um domínio específico', ou seja, sempre que for possível agrupar informações que se relacionam e tratam de um mesmo assunto, posso dizer que tenho um banco de dados. Podemos exemplificar situações clássicas como uma lista telefônica, um catálogo de CDs ou um sistema de controle de RH de uma empresa.";
             }
@@ -63,7 +65,8 @@ namespace Educacional
             }
             else if (btn.Name.Equals("mbt4Quiz"))
             {
-                tbConteudo.Text = "Quiz";
+                tbConteudo.Text = "Clique no botão abaixo para ir ao Quiz.";
+                btGoToQuiz.Visibility = Visibility.Visible;
             }
 
             Falar(tbConteudo.Text);
@@ -94,6 +97,12 @@ namespace Educacional
         private void btParar_Click(object sender, RoutedEventArgs e)
         {
             this.media.Stop();
+        }
+
+        private void btGoToQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            this.media.Stop();
+            this.Frame.Navigate(typeof(Quiz));
         }
     }
 }

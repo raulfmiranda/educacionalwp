@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Educacional.Quiz"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Educacional"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="Black"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="15 15 15 0" Background="{StaticResource screen_background}">
+        <StackPanel x:ConnectionId='1' x:Name="panelQuizHeader" Background="Red" Margin="-15 -15 -15 15">
+            <TextBlock Text="Quiz" Margin="0 0 0 10" HorizontalAlignment="Center" Style="{StaticResource TextBlockTitle}" Foreground="White"/>
+            <TextBlock Text="Responda as questões a seguir." HorizontalAlignment="Center" Margin="0 0 0 10" Foreground="White"/>
+        </StackPanel>
+        <ScrollViewer Height="300" VerticalScrollMode="Enabled">
+            <StackPanel Height="auto">
+                <StackPanel x:ConnectionId='4' x:Name="panelResultadoQuiz" Margin="0 50 0 0" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="QUANTIDADE DE QUESTÕES CORRETAS"/>
+                    <TextBlock x:ConnectionId='21' x:Name="tbResultadoQuiz" FontSize="70" Foreground="Red" FontWeight="ExtraBold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel x:ConnectionId='5' x:Name="panelQuizBody">
+                    <StackPanel x:ConnectionId='6' x:Name="pQuest1">
+                        <TextBlock x:ConnectionId='17' x:Name="tbQuest1" Text="1. Qual dos exemplos a seguir não é um SGBD?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:ConnectionId='18' x:Name="rbQ1resp1" Content="Oracle" Tag="q1resp1"/>
+                        <RadioButton x:ConnectionId='19' x:Name="rbQ1resp2" Content="SQL Server" Tag="q1resp2"/>
+                        <RadioButton x:ConnectionId='20' x:Name="rbQ1resp3" Content="PostDB3 (resposta)" Tag="q1resp3"/>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='7' x:Name="pQuest2" Margin="0 20 0 20">
+                        <TextBlock x:ConnectionId='13' x:Name="tbQuest2" Text="2. Qual dos itens abaixo não faz parte do conjunto de componentes básicos que compõem um sistema de banco de dados?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:ConnectionId='14' x:Name="rbQ2resp1" Content="dados" Tag="q2resp1"/>
+                        <RadioButton x:ConnectionId='15' x:Name="rbQ2resp2" Content="roteadores (resposta)" Tag="q2resp2"/>
+                        <RadioButton x:ConnectionId='16' x:Name="rbQ2resp3" Content="usuários" Tag="q2resp3"/>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='8' x:Name="pQuest3">
+                        <TextBlock x:ConnectionId='9' x:Name="tbQuest3" Text="3. Quais são as duas fases de um projeto de banco de dados?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:ConnectionId='10' x:Name="rbQ3resp1" Content="Modelagem conceitual e Projeto lógico (resposta)" Tag="q3resp1"/>
+                        <RadioButton x:ConnectionId='11' x:Name="rbQ3resp2" Content="Modelagem lógica e Projeto conceitual" Tag="q3resp2"/>
+                        <RadioButton x:ConnectionId='12' x:Name="rbQ3resp3" Content="Projeto empírico e Modelagem analógica" Tag="q3resp3"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+            <Button x:ConnectionId='2' x:Name="btCancelarQuiz" Content="Cancelar" Style="{StaticResource ButtonSecondary}"                              />
+            <Button x:ConnectionId='3' x:Name="btConcluirQuiz" Content="Concluir Quiz"  Style="{StaticResource ButtonPrimary}"                             />
+        </StackPanel>
+    </StackPanel>
+</Page>
+

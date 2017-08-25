@@ -46,14 +46,15 @@
                 </Grid.RowDefinitions>
                 <ScrollViewer VerticalScrollMode="Enabled">
                     <Grid Padding="10" Height="auto">
-                        <TextBlock x:ConnectionId='9' x:Name="tbConteudo" Text="Bem-vindo(a) ao Tutorial de Introdução à Banco de Dados. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock x:ConnectionId='10' x:Name="tbConteudo" Text="Bem-vindo(a) ao Tutorial de Introdução à Banco de Dados. Escolha no menu ao lado os tópicos de seu interesse." Style="{StaticResource TextBlockStyle}"/>
                     </Grid>
                 </ScrollViewer>
+                <Button x:ConnectionId='7' x:Name="btGoToQuiz" Content="Ir para Quiz" Margin="20" Visibility="Collapsed" Style="{StaticResource ButtonPrimary}"                         />
                 <StackPanel Grid.Row="1" Background="{StaticResource button_background}" BorderBrush="Red" BorderThickness="1">
                     <TextBlock Text="Controle do Audio" HorizontalAlignment="Center" Foreground="White"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:ConnectionId='7' x:Name="btFalar" Content="Falar" Style="{StaticResource ButtonSecondary}"                      />
-                        <Button x:ConnectionId='8' x:Name="btParar" Content="Parar" Style="{StaticResource ButtonSecondary}"                      />
+                        <Button x:ConnectionId='8' x:Name="btFalar" Content="Falar" Style="{StaticResource ButtonSecondary}"                      />
+                        <Button x:ConnectionId='9' x:Name="btParar" Content="Parar" Style="{StaticResource ButtonSecondary}"                      />
                     </StackPanel>
                 </StackPanel>
             </Grid>

@@ -105,6 +105,9 @@
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.xaml.cs">
+      <DependentUpon>Quiz.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +141,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Quiz.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

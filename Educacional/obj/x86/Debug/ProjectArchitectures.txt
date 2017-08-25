@@ -1,1 +1,1 @@
-C:\Users\Raul\Documents\Visual Studio 2017\Projects\Educacional\Educacional\Educacional.csproj;x86
+C:\Users\Raul\documents\visual studio 2017\Projects\Educacional\Educacional\Educacional.csproj;x86

@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="Educacional.Quiz"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Educacional"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="Black"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="15 15 15 0" Background="{StaticResource screen_background}">
+        <StackPanel x:Name="panelQuizHeader" Background="Red" Margin="-15 -15 -15 15">
+            <TextBlock Text="Quiz" Margin="0 0 0 10" HorizontalAlignment="Center" Style="{StaticResource TextBlockTitle}" Foreground="White"/>
+            <TextBlock Text="Responda as questões a seguir." HorizontalAlignment="Center" Margin="0 0 0 10" Foreground="White"/>
+        </StackPanel>
+        <ScrollViewer Height="300" VerticalScrollMode="Enabled">
+            <StackPanel Height="auto">
+                <StackPanel x:Name="panelResultadoQuiz" Margin="0 50 0 0" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="QUANTIDADE DE QUESTÕES CORRETAS"/>
+                    <TextBlock x:Name="tbResultadoQuiz" FontSize="70" Foreground="Red" FontWeight="ExtraBold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel x:Name="panelQuizBody">
+                    <StackPanel x:Name="pQuest1">
+                        <TextBlock x:Name="tbQuest1" Text="1. Qual dos exemplos a seguir não é um SGBD?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:Name="rbQ1resp1" Content="Oracle" Tag="q1resp1"/>
+                        <RadioButton x:Name="rbQ1resp2" Content="SQL Server" Tag="q1resp2"/>
+                        <RadioButton x:Name="rbQ1resp3" Content="PostDB3 (resposta)" Tag="q1resp3"/>
+                    </StackPanel>
+                    <StackPanel x:Name="pQuest2" Margin="0 20 0 20">
+                        <TextBlock x:Name="tbQuest2" Text="2. Qual dos itens abaixo não faz parte do conjunto de componentes básicos que compõem um sistema de banco de dados?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:Name="rbQ2resp1" Content="dados" Tag="q2resp1"/>
+                        <RadioButton x:Name="rbQ2resp2" Content="roteadores (resposta)" Tag="q2resp2"/>
+                        <RadioButton x:Name="rbQ2resp3" Content="usuários" Tag="q2resp3"/>
+                    </StackPanel>
+                    <StackPanel x:Name="pQuest3">
+                        <TextBlock x:Name="tbQuest3" Text="3. Quais são as duas fases de um projeto de banco de dados?" Style="{StaticResource TextBlockStyle}"/>
+                        <RadioButton x:Name="rbQ3resp1" Content="Modelagem conceitual e Projeto lógico (resposta)" Tag="q3resp1"/>
+                        <RadioButton x:Name="rbQ3resp2" Content="Modelagem lógica e Projeto conceitual" Tag="q3resp2"/>
+                        <RadioButton x:Name="rbQ3resp3" Content="Projeto empírico e Modelagem analógica" Tag="q3resp3"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+            <Button x:Name="btCancelarQuiz" Content="Cancelar" Style="{StaticResource ButtonSecondary}" Click="btCancelarQuiz_Click" />
+            <Button x:Name="btConcluirQuiz" Content="Concluir Quiz"  Style="{StaticResource ButtonPrimary}" Click="btConcluirQuiz_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

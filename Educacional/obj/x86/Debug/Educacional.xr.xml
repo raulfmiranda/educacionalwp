@@ -16,6 +16,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -37,6 +38,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="TextWrapping" />
@@ -73,6 +75,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Educacional.Cadastro" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
@@ -108,7 +113,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Educacional.Principal" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Tag" />
+    </RootType>
+    <RootType FullName="Educacional.Quiz" />
   </Roots.RootTypes>
 </Roots>
